@@ -3,4 +3,9 @@
     <string name="app_title">Fun With Flags</string>
     <string name="welcome">Welcome!</string>
     <string name="enter_name">Please enter your name</string>
+    <string name="start">Start</string>
+    <string name="question">What country does this flag belong to?</string>
+    <string name="guess">Guess</string>
+    <string name="results_title">Results</string>
+    <string name="play_again">Play Again?</string>
 </resources>

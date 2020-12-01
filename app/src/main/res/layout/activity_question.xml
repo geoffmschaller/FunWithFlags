@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#2C2C2C"
+	android:orientation="vertical"
+	android:padding="15sp"
+	tools:context=".views.QuestionActivity">
+
+	<TextView
+		android:id="@+id/textView2"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:gravity="center"
+		android:paddingLeft="60sp"
+		android:paddingTop="20sp"
+		android:paddingRight="60sp"
+		android:paddingBottom="20sp"
+		android:text="@string/question"
+		android:textSize="20sp"
+		android:textStyle="bold" />
+
+	<ImageView
+		android:id="@+id/flagImage"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:padding="10sp"
+		android:src="@drawable/ic_flag_of_australia"
+		app:srcCompat="@drawable/ic_flag_of_argentina" />
+
+	<TextView
+		android:id="@+id/count"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:gravity="center"
+		android:text="0 / 10" />
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:orientation="vertical"
+		android:padding="20sp">
+
+		<Button
+			android:id="@+id/answerOne"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:backgroundTint="#FFFFFF"
+			android:onClick="selectAnswer"
+			android:paddingTop="10sp"
+			android:paddingBottom="10sp"
+			android:text="Button"
+			android:textColor="#434343" />
+
+		<Button
+			android:id="@+id/answerTwo"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:backgroundTint="#FFFFFF"
+			android:onClick="selectAnswer"
+			android:paddingTop="10sp"
+			android:paddingBottom="10sp"
+			android:text="Button"
+			android:textColor="#434343" />
+
+		<Button
+			android:id="@+id/answerThree"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:backgroundTint="#FFFFFF"
+			android:onClick="selectAnswer"
+			android:paddingTop="10sp"
+			android:paddingBottom="10sp"
+			android:text="Button"
+			android:textColor="#434343" />
+
+		<Button
+			android:id="@+id/answerFour"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:backgroundTint="#FFFFFF"
+			android:onClick="selectAnswer"
+			android:paddingTop="10sp"
+			android:paddingBottom="10sp"
+			android:text="Button"
+			android:textColor="#434343" />
+
+	</LinearLayout>
+
+	<Button
+		android:id="@+id/submitButton"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:text="@string/guess" />
+
+</LinearLayout>

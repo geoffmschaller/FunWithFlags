@@ -8,7 +8,7 @@
     android:gravity="center"
     android:orientation="vertical"
     android:padding="15sp"
-    tools:context=".MainActivity">
+    tools:context=".views.MainActivity">
 
     <TextView
         android:id="@+id/textView"
@@ -21,53 +21,61 @@
         android:textSize="25dp"
         android:textStyle="bold" />
 
-    <LinearLayout
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#FFFFFF"
-        android:orientation="vertical"
-        android:padding="20sp">
+        android:padding="20sp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp">
 
-        <TextView
-            android:id="@+id/textView2"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:paddingTop="10sp"
-            android:paddingBottom="10sp"
-            android:text="@string/welcome"
-            android:textColor="#1F1F20"
-            android:textSize="35sp" />
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10sp">
 
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:paddingTop="10sp"
-            android:paddingBottom="10sp"
-            android:text="@string/enter_name" />
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
+                android:text="@string/welcome"
+                android:textColor="#4E4D4D"
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
-        <EditText
-            android:id="@+id/editTextTextPersonName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:gravity="center"
-            android:inputType="textPersonName"
-            android:paddingTop="10sp"
-            android:paddingBottom="10sp"
-            android:text="Name" />
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
+                android:text="@string/enter_name" />
 
-        <Button
-            android:id="@+id/button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#009688"
-            android:gravity="center"
-            android:paddingTop="10sp"
-            android:paddingBottom="10sp"
-            android:text="Button"
-            android:textColor="#FFFFFF" />
-    </LinearLayout>
+            <EditText
+                android:id="@+id/nameInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Your Name"
+                android:inputType="textPersonName"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp" />
+
+            <Button
+                android:id="@+id/buttonStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#9575CD"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
+                android:text="@string/start"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
 </LinearLayout>
