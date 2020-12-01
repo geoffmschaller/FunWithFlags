@@ -39,13 +39,11 @@ class QuestionActivity : AppCompatActivity() {
             } else {
                 when (mode) {
                     QuestionMode.CHECK_ANSWER -> {
-                        if (!checkAnswer()) {
-                            (it as Button).text = "Next Question"
-                            showWrongAnswer()
-                            mode = QuestionMode.NEXT_QUESTION
-                        } else {
+                        (it as Button).text = "Next Question"
+                        showAnswers()
+                        mode = QuestionMode.NEXT_QUESTION
+                        if (checkAnswer()) {
                             score += 1
-                            generateQuestion()
                         }
                     }
                     QuestionMode.NEXT_QUESTION -> {
@@ -129,7 +127,7 @@ class QuestionActivity : AppCompatActivity() {
         return chosenAnswer.replace(" ", "_") == correctAnswer.replace(" ", "_")
     }
 
-    private fun showWrongAnswer() {
+    private fun showAnswers() {
         when (chosenAnswer) {
             answerOne.text.toString() -> markAnswerWrong(answerOne)
             answerTwo.text.toString() -> markAnswerWrong(answerTwo)
